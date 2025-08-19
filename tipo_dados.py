@@ -1,0 +1,16 @@
+#Criando tipos de informações
+
+String = str('Ola mundo')
+inteiro = int(10)
+flutuante_real = float(10.99)
+complexo = complex(1j)
+lista = list(('maca', 'uva','pera'))
+tupla = tuple(('morango','jaca','limao'))
+range = range(6)
+dicionario = dict(nome = 'Odemir',age = 29)
+set = set(('laranja','caqui','tangerina'))
+fronzet = frozenset (('kiwi','goiaba','melancia'))
+boleano = bool(5)
+Bytes = bytes(5)
+ByteArray = bytearray(5)
+memoryView = memoryview(bytes(5))
