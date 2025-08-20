@@ -1,0 +1,15 @@
+# Operadores de comparações
+igual = str("==")
+diferente = str("!=")
+maior = str(">")
+menor = str("<")
+maior_igual = str(">=")
+menor_igual = str("<=")
+
+print('')
+print('')
+print('')
+print('')
+print('')
+print('')
+print('')

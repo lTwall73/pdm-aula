@@ -59,10 +59,11 @@ print( string_06.split(', ') )
 
 # Comando input
 # Enviar uma informação momentânea
-
-
-
+print(' Qual o seu nome? ')
 nome = input(' Qual o seu nome? ')
+
+
+print(' Quantos anos você tem? ')
 idade = input(' Quantos anos você tem? ')
 
 print('Seu nome é:', nome)
