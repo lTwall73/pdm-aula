@@ -54,3 +54,16 @@ string_05 = (" Ola Mundo ")
 print( string_05.strip() )
 
 # Removendo espaços antes e fim da palavra
+string_06 = ('Loja 1 vendeu 10, loja 2 vendeu 20, loja 3 vendeu 30')
+print( string_06.split(', ') )
+
+# Comando input
+# Enviar uma informação momentânea
+
+
+
+nome = input(' Qual o seu nome? ')
+idade = input(' Quantos anos você tem? ')
+
+print('Seu nome é:', nome)
+print('Sua idade:', idade)
