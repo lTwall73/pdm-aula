@@ -1,0 +1,82 @@
+print('Hello World!')
+
+    2 Faça um programa que solicite um número do usuário e apresente a seguinte mensagem na tela: "O número digitado foi [número]"
+
+numero = input("Digite um número: ")
+print(f"O número digitado foi {numero}")
+
+    3 Escreva um programa que solicite o nome e o sobrenome do usuário. Ao final o programa deverá apresentar o nome completo do usuário na tela.
+
+nome = input("Digite seu nome: ")
+sobrenome = input("Digite seu sobrenome: ")
+nome_completo = nome + " " + sobrenome
+print(f"Seu nome completo é: {nome_completo}")
+
+    4 Faça um programa que solicite três números inteiros do usuário e imprima a soma destes.
+
+num1 = int(input("Digite o primeiro número inteiro: "))
+num2 = int(input("Digite o segundo número inteiro: "))
+num3 = int(input("Digite o terceiro número inteiro: "))
+soma = num1 + num2 + num3
+print(f"A soma dos números é: {soma}")
+
+    5 Escreva um programa que solicite duas notas do usuário e apresente a média na tela da seguinte forma: "A média das notas [nota1] e [nota2] é [média]" 
+
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+media = (nota1 + nota2) / 2
+print(f"A média das notas {nota1} e {nota2} é {media:.2f}")
+
+    6 Faça um programa que calcule a raiz quadrada de um número. O usuário deve inserir um número e o programa deve mostrar na tela o resultado da raiz quadrada do número inserido. 
+
+import math
+numero = float(input("Digite um número para calcular a raiz quadrada: "))
+if numero >= 0:
+raiz_quadrada = math.sqrt(numero)
+print(f"A raiz quadrada de {numero} é: {raiz_quadrada:.2f}")
+else:
+print("Não é possível calcular a raiz quadrada de um número negativo.")
+
+    7 Escreva um programa que calcule a área de uma circunferência. O usuário deve digitar o valor do raio e ao final o programa deverá mostrar na tela a área da circunferência. Use a fórmula: área=pi*r² , em que pi é uma constante e r o raio da circunferência. 
+
+Dica: você pode usar a biblioteca math para pegar a constante pi. 
+from math import pi 
+
+import math
+raio = float(input("Digite o valor do raio da circunferência: "))
+area = math.pi * (raio ** 2)
+print(f"A área da circunferência é: {area:.2f}")
+
+    8 Escreva um programa que receba o nome, sobrenome e idade do usuário e apresente a seguinte mensagem na tela: 
+
+"Seja bem-vindo [nome] [sobrenome]." 
+
+"Você possui [idade] anos de idade." 
+
+No campo nome e sobrenome utilize os métodos strip() e title(). Lembre-se que o primeiro método permite remover os espaços antes e depois da string, enquanto que o último permite colocar a string no formato titlecased (capitaliza a string). 
+
+nome = input("Digite seu nome: ").strip().title()
+sobrenome = input("Digite seu sobrenome: ").strip().title()
+idade = int(input("Digite sua idade: "))
+print(f"\nSeja bem-vindo(a), {nome} {sobrenome}.")
+print(f"Você possui {idade} anos de idade.")
+
+    9 Escreva um programa que peça o nome e a idade do usuário. Caso a idade do usuário seja maior ou igual a 18 anos apresente a seguinte mensagem: "Seja bem-vindo ao nosso site [nome]!"; caso contrário, apresente a seguinte mensagem: "Você não pode acessar nosso site [nome].". 
+
+def verificar_acesso():
+  nome = input("Digite seu nome: ")
+  idade = int(input("Digite sua idade: "))
+  if idade >= 18:
+    print(f"Seja bem-vindo ao nosso site {nome}!")
+  else:
+    print(f"Você não pode acessar nosso site {nome}.")
+verificar_acesso()
+
+    10 Faça um programa que peça a base e a altura de um retângulo e calcule e mostre na tela a área e o perímetro. 
+
+base = float(input("Digite a base do retângulo: "))
+altura = float(input("Digite a altura do retângulo: "))
+area = base * altura
+perimetro = 2 * (base + altura)
+print(f"A área do retângulo é: {area:.2f}")
+print(f"O perímetro do retângulo é: {perimetro:.2f}")
